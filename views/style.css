@@ -1,0 +1,64 @@
+h1{
+    color: blue;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 15px;
+}
+p{
+    font-size: larger;
+    
+}
+
+nav{
+    background-color: gray;
+    height: 45px;
+}
+
+ul{
+    display: flex;
+}
+li{
+    margin-top: 10px;
+    list-style: none;
+    margin-right: 25px;
+    font-size: 25px;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+form{
+    width: 600px;
+    height: 520px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    margin-left: 300px;
+}
+textarea{
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 550px;
+    
+}
+input{
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 550px;
+    height: 30px;
+}
+button{
+    display: block;
+    width: 300px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin-left: 100px;
+    height: 30px;
+}
+button:hover{
+    cursor: pointer;
+}

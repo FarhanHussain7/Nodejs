@@ -1,0 +1,3 @@
+This is txt file which is inhert by file demo by module of fs 
+this is append by O3_file_demo,js ----------This is file-2 content 
+ This file is number 2

@@ -1,0 +1,14 @@
+{
+  "name": "farhanhussain",
+  "version": "1.0.0",
+  "description": "this is package for the express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "farhan hussain",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

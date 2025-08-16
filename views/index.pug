@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using plane html in pug</title>
+    style
+        include ./style.css
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">contact</a></li>
+            <li><a href="/">about</a></li>
+        </ul>
+    </nav>
+    <h1>PLANE HTML IN PUG FILE</h1>
+    <p>
+        | #{content}
+        |<!-- go to page source for sheeing full result -->
+    </p>
+
+    <form action="" method="post" id="contact">
+        <input type="text" name="name" placeholder="enter your name">
+        <input type="text" name="email" placeholder="enter your email">
+        <input type="number" name="mobno" placeholder="Mobile no">
+        <input type="password" name="pass" placeholder="password">
+        <textarea name="query" id="address" cols="30" rows="5" placeholder="enter your address"></textarea>
+        <textarea name="message" id="more" cols="30" rows="8" placeholder="More about you......."></textarea>
+        <button>submit</button>
+    </form>
+
+</body>
+</html>

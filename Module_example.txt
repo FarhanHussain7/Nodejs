@@ -1,0 +1,1 @@
+this a for showing the module expamle by using readFileSync(path)
