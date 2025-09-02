@@ -6,6 +6,7 @@ const { json } = require('stream/consumers');
 const server = http.createServer((req, res) =>{
     const url = req.url;
     let userId = +req.url.split('users/').pop();
+    console.log(userId);
     if(url === '/users') {
         res.write(JSON.stringify(users));
     }
