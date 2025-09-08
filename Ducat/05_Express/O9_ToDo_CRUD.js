@@ -10,6 +10,9 @@ const TodoArr = [
     { id:4, title:'ToDo 4', desc:'This is Todo 4', completed: true},
 ]
 
+app.get('/', (req, res)=>{
+    res.send("Home page ");
+});
 app.get('/todos', (req, res)=>{
     res.status(200).json(TodoArr);
 });
@@ -24,7 +27,7 @@ app.post('/todos', (req, res)=>{
     res.status(201).json('to do data added successfully');
 });
 
-
+// It will update all data 
 app.put('/todos/:id', (req,res)=>{
     const todoObj = TodoArr.find(todo=> todo.id === +req.params.id);
     if(todoObj){
@@ -39,7 +42,7 @@ app.put('/todos/:id', (req,res)=>{
     }
 });
 
-
+// it will update only single object 
 app.patch('/todos/:id', (req,res)=>{
     const todoObj = TodoArr.find(todo=> todo.id === +req.params.id);
     if(todoObj){
