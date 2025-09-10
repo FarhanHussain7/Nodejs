@@ -1,0 +1,18 @@
+{
+  "name": "07_cors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "O1_Demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}

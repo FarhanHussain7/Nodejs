@@ -3,13 +3,20 @@ const cors = require('cors');
 const { use } = require('react');
 const app = express();
 
+var whitelist = ['https://www.w3schools.com', 'https://www.tutorialspoint.com'];
+
 var corsOptions = {
-    origin : 'https://www.w3schools.com',
-    optionsSuccessStatus: 200 // Some legacy browser (IEII, various smartTVs) choke on 204
+    origin : function (origin, callback) {
+        if(whitelist.includes(origin)){
+            callback(null, true)
+        }else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    }
 }
 app.use(cors(corsOptions));
 
-app.get('/users', (req, res)=>{
+app.get('/emps', (req, res)=>{
     const users = [
         {name: 'Farhan', add: 'bang', age: 25},
         {name: 'hussain', add: 'hyd', age: 22},
