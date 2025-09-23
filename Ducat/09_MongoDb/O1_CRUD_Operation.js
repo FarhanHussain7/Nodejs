@@ -14,7 +14,7 @@ async function connectToDB() {
     }
 }
 
-connectToDB(); // ✅ Actually call the function
+
 
 app.get('/employee', async (req, res) => {
     try {
@@ -76,5 +76,6 @@ app.delete('/employee/:id', async (req, res) => {
 });
 
 app.listen(5000, () => {
+    connectToDB(); // ✅ Actually call the function
     console.log('🚀 Server running at http://localhost:5000');
 });
