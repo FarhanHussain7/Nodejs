@@ -1,0 +1,14 @@
+more :- when you want to read content page by page 
+touch <filename> : create a file 
+rm <filename> : delete a file 
+vi <filename> : Edit a file [esc -> :wq]
+nano <filename> : Create and edit new file modern way [ctrl+x -> y -> enter]
+mkdir <dir name> -> create a new directory/folder 
+rmdir <dir name> -> delete a directory/folder
+-rf <dir name> -> delete a directory/folder 
+ cd -> Change directory cd 
+cd .. -> Go back to previous folder 
+cd ../.. -> Go back to two folder previous
+absolute path :- 
+relative path :- cd <file name>/<file name>
+cp <file name> <folder name> :- copy file  
