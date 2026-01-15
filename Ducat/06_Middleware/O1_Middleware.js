@@ -9,7 +9,7 @@ const myMiddleware = function(req, res, next){
 
 app.use(myMiddleware);
 
-app.get('/', (req,res)=>{
+app.get('/',myMiddleware, (req,res)=>{
     res.send("<h1>Home Page</h1>");
 });
 

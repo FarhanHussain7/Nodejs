@@ -13,6 +13,7 @@ const TodoArr = [
 app.get('/', (req, res)=>{
     res.send("Home page ");
 });
+
 app.get('/todos', (req, res)=>{
     res.status(200).json(TodoArr);
 });
@@ -23,7 +24,7 @@ app.get('/todos/:id', (req,res)=>{
 });
 
 app.post('/todos', (req, res)=>{
-   TodoArr.push(req.body);
+    TodoArr.push(req.body);
     res.status(201).json('to do data added successfully');
 });
 
@@ -55,8 +56,6 @@ app.patch('/todos/:id', (req,res)=>{
         res.send(404).json({msg: 'To Do Not found'});
     }
     });
-
-
 
 app.delete('/todos/:id', (req,res)=>{
     const todoIndex = TodoArr.findIndex(todo=> todo.id === +req.params.id);

@@ -19,6 +19,7 @@ app.get('/todos/:id', (req,res)=>{
     res.status(200).json(todoObj);
 });
 
+// http://localhost:5000/java/multithreading
 app.get('/courses/:coursename/:topicname', (req, res)=>{
     res.send(`Course name is ${req.params.coursename} and topic name is ${req.params.topicname}`);
 });
